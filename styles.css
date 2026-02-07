@@ -120,11 +120,58 @@ footer {
     align-items: flex-start;
   }
 
-  .placeholder-grid {
-    grid-template-columns: 1fr;
-  }
+  .cards-grid {
+  grid-template-columns: 1fr;
+}
+
 
   .hero h2 {
     font-size: 28px;
   }
+}
+
+
+/*Skill Cards*/
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+  margin-top: 18px;
+}
+
+.skill-card {
+  border: 1px solid #e3e3e3;
+  border-radius: 14px;
+  padding: 18px;
+  background: #ffffff;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  cursor: pointer;
+}
+
+.skill-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.skill-card h4 {
+  margin: 0 0 8px 0;
+  font-size: 18px;
+}
+
+.card-desc {
+  margin: 0 0 10px 0;
+  color: #444;
+}
+
+.card-meta {
+  margin: 0 0 8px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.card-details {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #333;
 }
